@@ -24,6 +24,10 @@
         "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/layout_item_birthday.xml.flat",
+        "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/layout/item_birthday.xml"
+    },
+    {
         "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/layout/activity_main.xml"
     },
