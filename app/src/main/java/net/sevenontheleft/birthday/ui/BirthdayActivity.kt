@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_birthday.*
 import net.sevenontheleft.birthday.R
 import net.sevenontheleft.birthday.model.Birthday
-import java.text.SimpleDateFormat
 
 class BirthdayActivity : AppCompatActivity() {
 

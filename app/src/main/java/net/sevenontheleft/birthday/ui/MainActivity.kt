@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Layout
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
@@ -33,10 +34,13 @@ class MainActivity : AppCompatActivity() {
         list_view.adapter = adapter
         list_view.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
 
+        progress_view.visibility = View.VISIBLE
+
         val birthdayRepo = BirthdayRepo(this)
         model = ViewModelProvider(this, BirthdayViewModelFactory(birthdayRepo)).get(BirthdayViewModel::class.java)
         model.birthdayList.observe(this, { birthdayList ->
             birthdayList?.let {
+                progress_view.visibility = View.GONE
                 adapter.setBirthdayList(birthdayList)
             }
         })

@@ -8,12 +8,12 @@
         "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/drawable/ic_launcher_background.xml"
-    },
-    {
         "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
