@@ -16,6 +16,8 @@ import net.sevenontheleft.birthday.engine.BirthdayRepo
 import net.sevenontheleft.birthday.model.Birthday
 import net.sevenontheleft.birthday.model.BirthdayViewModel
 import net.sevenontheleft.birthday.model.BirthdayViewModelFactory
+import org.w3c.dom.Text
+import java.text.SimpleDateFormat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var model: BirthdayViewModel
@@ -65,6 +67,8 @@ class MainActivity : AppCompatActivity() {
 
         fun bind(birthday : Birthday) {
             itemView.findViewById<TextView>(R.id.name).text = birthday.name?.first
+            // we need to format the date to show it
+            itemView.findViewById<TextView>(R.id.date).text = SimpleDateFormat("dd-MM-yyyy").format(birthday.dob?.date).toString()
         }
     }
 }
