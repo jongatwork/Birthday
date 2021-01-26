@@ -1,0 +1,7 @@
+#Tue Jan 26 14:51:43 GMT 2021
+base.0=/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/classes.dex
