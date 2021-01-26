@@ -20,6 +20,7 @@ class BirthdayActivity : AppCompatActivity() {
         val birthday = intent.getSerializableExtra(BIRTHDAY) as Birthday
 
         name.text = birthday.name?.first
-        date.text = SimpleDateFormat("dd-MM-yyyy").format(birthday.dob?.date).toString()
+        // should probably change this to handle 1 year old (no s)
+        date.text = "" + birthday.dob?.age + " " + resources.getString(R.string.years_old)
     }
 }
