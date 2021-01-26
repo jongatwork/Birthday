@@ -1,7 +1,9 @@
 package net.sevenontheleft.birthday.engine
 
 import android.content.Context
+import androidx.lifecycle.MutableLiveData
 import com.google.gson.GsonBuilder
+import net.sevenontheleft.birthday.model.Birthday
 import net.sevenontheleft.birthday.model.Results
 import retrofit2.Call
 import retrofit2.Callback
@@ -10,7 +12,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 // this class is used to get hold of the birthday info;
-// it either comes from networking or the Room database
+// we download the data using retrofit
 class BirthdayRepo(context: Context) {
     val retrofit: Retrofit
     val birthdayService: BirthdayService
@@ -25,8 +27,8 @@ class BirthdayRepo(context: Context) {
         birthdayService = retrofit.create(BirthdayService::class.java)
     }
 
-    fun getBirthdays() {
-        // just want to test getting the birthday info to start with to check what we're getting
+    fun getBirthdays() : MutableLiveData<List<Birthday>> {
+        val responseData = MutableLiveData<List<Birthday>>()
         val request: Call<Results> = birthdayService.listBirthdays()
         request.enqueue(object : Callback<Results> {
             override fun onFailure(call: Call<Results>, t: Throwable) {
@@ -39,8 +41,10 @@ class BirthdayRepo(context: Context) {
                 val ee = 33
                 val dd = 333
                 if (response.body() != null) {
+                    responseData.value = response.body()!!.birthdays
                 }
             }
         })
+        return responseData
     }
 }
