@@ -19,7 +19,7 @@ class BirthdayRepoTest {
     }
 
     @Test
-    // this test does not yet work because I cannot invok observeForever on a background thread
+    // this test does not yet work because I cannot invoke observeForever on a background thread
     fun downloadBirthdays() {
         val birthdayList = birthdayRepo.getBirthdays()
         birthdayRepo.getBirthdays().observeForever {

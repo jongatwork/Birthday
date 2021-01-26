@@ -1,5 +1,6 @@
 package net.sevenontheleft.birthday.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Layout
@@ -41,6 +42,12 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+    fun openBirthday(birthday: Birthday) {
+        val intent = Intent(this, BirthdayActivity::class.java)
+        intent.putExtra(BirthdayActivity.BIRTHDAY, birthday)
+        startActivity(intent)
+    }
+
     inner class BirthdayAdapter() : RecyclerView.Adapter<BirthdayHolder>() {
         private var birthdayList = emptyList<Birthday>()
 
@@ -69,6 +76,10 @@ class MainActivity : AppCompatActivity() {
             itemView.findViewById<TextView>(R.id.name).text = birthday.name?.first
             // we need to format the date to show it
             itemView.findViewById<TextView>(R.id.date).text = SimpleDateFormat("dd-MM-yyyy").format(birthday.dob?.date).toString()
+
+            itemView.setOnClickListener({
+                openBirthday(birthday)
+            })
         }
     }
 }

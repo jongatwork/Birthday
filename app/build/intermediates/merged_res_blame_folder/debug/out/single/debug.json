@@ -44,6 +44,10 @@
         "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/layout_activity_birthday.xml.flat",
+        "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/layout/activity_birthday.xml"
+    },
+    {
         "merged": "/Users/jongibson/Documents/WORK/Birthday/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/jongibson/Documents/WORK/Birthday/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },

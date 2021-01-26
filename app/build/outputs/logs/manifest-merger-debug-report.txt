@@ -80,19 +80,23 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jong
 	android:theme
 		ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:13:9-46
 activity#net.sevenontheleft.birthday.ui.MainActivity
-ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:14:9-19:20
 	android:name
 		ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:14:19-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
 ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
 		ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:17:27-74
+activity#net.sevenontheleft.birthday.ui.BirthdayActivity
+ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:20:9-56
+	android:name
+		ADDED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml:20:19-54
 uses-sdk
 INJECTED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jongibson/Documents/WORK/Birthday/app/src/main/AndroidManifest.xml
