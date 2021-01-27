@@ -1,2 +1,0 @@
-net/sevenontheleft/birthday/BuildConfig.java
- net.sevenontheleft.birthday.BuildConfig

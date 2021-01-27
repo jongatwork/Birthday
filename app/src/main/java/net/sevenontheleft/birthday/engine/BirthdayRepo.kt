@@ -29,7 +29,7 @@ class BirthdayRepo(context: Context) {
 
     fun getBirthdays() : MutableLiveData<List<Birthday>> {
         val responseData = MutableLiveData<List<Birthday>>()
-        val request: Call<Results> = birthdayService.listBirthdays()
+        val request: Call<Results> = birthdayService.listBirthdays(1000, "chalkboard", "name,dob")
         request.enqueue(object : Callback<Results> {
             override fun onFailure(call: Call<Results>, t: Throwable) {
                 val ee = 33
