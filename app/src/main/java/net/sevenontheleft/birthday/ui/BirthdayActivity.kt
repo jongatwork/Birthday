@@ -18,6 +18,15 @@ class BirthdayActivity : AppCompatActivity() {
 
         val birthday = intent.getSerializableExtra(BIRTHDAY) as Birthday
 
+        val initials = StringBuilder()
+        if(birthday.name?.first != null && birthday.name?.first?.length != 0) {
+            initials.append(birthday.name?.first!![0])
+        }
+        if(birthday.name?.last != null && birthday.name?.last?.length != 0) {
+            initials.append(birthday.name?.last!![0])
+        }
+        person_picture_text.text = initials.toString().capitalize()
+
         name.text = birthday.name?.first
         // should probably change this to handle 1 year old (no s)
         date.text = "" + birthday.dob?.age + " " + resources.getString(R.string.years_old)

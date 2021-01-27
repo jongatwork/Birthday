@@ -77,9 +77,18 @@ class MainActivity : AppCompatActivity() {
     inner class BirthdayHolder(inflater: LayoutInflater, parent: ViewGroup) : RecyclerView.ViewHolder(inflater.inflate(R.layout.item_birthday, parent, false)) {
 
         fun bind(birthday : Birthday) {
-            itemView.findViewById<TextView>(R.id.name).text = birthday.name?.first
+            itemView.findViewById<TextView>(R.id.name).text = birthday.name?.first + " " + birthday.name?.last
             // we need to format the date to show it
             itemView.findViewById<TextView>(R.id.date).text = SimpleDateFormat("dd-MM-yyyy").format(birthday.dob?.date).toString()
+
+            val initials = StringBuilder()
+            if(birthday.name?.first != null && birthday.name?.first?.length != 0) {
+                initials.append(birthday.name?.first!![0])
+            }
+            if(birthday.name?.last != null && birthday.name?.last?.length != 0) {
+                initials.append(birthday.name?.last!![0])
+            }
+            itemView.findViewById<TextView>(R.id.person_picture_text).text = initials.toString().capitalize()
 
             itemView.setOnClickListener({
                 openBirthday(birthday)
