@@ -14,17 +14,16 @@ import retrofit2.converter.gson.GsonConverterFactory
 // this class is used to get hold of the birthday info;
 // we download the data using retrofit
 class BirthdayRepo(context: Context) {
-    val retrofit: Retrofit
     val birthdayService: BirthdayService
 
     init {
         // we want the dates to be parsed automatically by gson so pass in the format
         val gson = GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").create()
-        retrofit = Retrofit.Builder()
+        birthdayService = Retrofit.Builder()
             .baseUrl("https://randomuser.me/api/")
             .addConverterFactory(GsonConverterFactory.create(gson))
-            .build()
-        birthdayService = retrofit.create(BirthdayService::class.java)
+            .build().
+            create(BirthdayService::class.java)
     }
 
     fun getBirthdays() : MutableLiveData<List<Birthday>> {

@@ -7,6 +7,7 @@ import retrofit2.http.Query
 
 interface BirthdayService {
     // this should be changed at some point to make more general and specify the query parameters rather than hardcoding them
+    // this is just left here to show how to hardcode everything in the request
 //    @GET("?results=1000&seed=chalkboard&inc=name,dob")
 //    fun listBirthdays() : Call<Results>
 
